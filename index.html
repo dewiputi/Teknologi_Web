@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Matematika Sederhana</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Kalkulator Matematika Sederhana</h1>
+
+    <div class="calculator">
+        <h2>Deret Fibonacci</h2>
+        <input type="number" id="fibonacciInput" placeholder="Masukkan jumlah angka">
+        <button onclick="generateFibonacci()">Generate</button>
+        <p id="fibonacciResult"></p>
+    </div>
+
+    <div class="calculator">
+        <h2>Volume Bangun Ruang</h2>
+        <label for="shapeSelect">Pilih Bangun Ruang:</label>
+        <select id="shapeSelect">
+            <option value="cube">Kubus</option>
+            <option value="sphere">Bola</option>
+            <option value="cylinder">Silinder</option>
+        </select>
+        <div id="inputFields"></div>
+        <button onclick="calculateVolume()">Hitung</button>
+        <p id="volumeResult"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
